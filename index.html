@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Baragon by headcount</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/headcount/Baragon">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Baragon</h1>
+            <h2>Load balancer API</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/headcount/Baragon/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/headcount/Baragon/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="baragon" class="anchor" href="#baragon"><span class="octicon octicon-link"></span></a>Baragon</h1>
+
+<p><img src="http://i.imgur.com/mCbkbcZ.jpg" alt="Behold the mighty Baragon's roar"></p>
+
+<p>HubSpot's load balancer API.</p>
+
+<h2>
+<a name="architecture" class="anchor" href="#architecture"><span class="octicon octicon-link"></span></a>Architecture</h2>
+
+<pre><code>  ZooKeeper                    ZooKeeper                ZooKeeper
+      ^                            ^                        ^
+      |                            |                        |
+                                             /-----&gt; Baragon Agent ------&gt; LB
+BaragonService ------&gt; BaragonAgent (leader) ------&gt; Baragon Agent ------&gt; LB
+                                             \-----&gt; Baragon Agent ------&gt; LB
+</code></pre>
+
+<h2>
+<a name="endpoints" class="anchor" href="#endpoints"><span class="octicon octicon-link"></span></a>Endpoints</h2>
+
+<p>TODO</p>
+
+<h3>
+<a name="baragon-1" class="anchor" href="#baragon-1"><span class="octicon octicon-link"></span></a>Baragon</h3>
+
+<p>TODO</p>
+
+<h3>
+<a name="baragon-agent" class="anchor" href="#baragon-agent"><span class="octicon octicon-link"></span></a>Baragon Agent</h3>
+
+<p>TODO</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/headcount">headcount</a> can be found on <a href="https://github.com/headcount/Baragon">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
